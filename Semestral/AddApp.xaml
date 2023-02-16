@@ -1,0 +1,18 @@
+﻿<Window x:Class="Semestral.AddApp"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Semestral"
+        mc:Ignorable="d"
+        Title="AddApp" Height="335" Width="636">
+    <Grid Background="{Binding Path=Theme, UpdateSourceTrigger=PropertyChanged, RelativeSource={RelativeSource AncestorType=Window}}">
+        <Label Content="App Name" Margin="143,125,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="67"/>
+        <Button Content="Ok" HorizontalAlignment="Right" Margin="0,0,90,28" VerticalAlignment="Bottom" Click="OK_button_"/>
+        <Button Content="Cancel" HorizontalAlignment="Left" Margin="72,0,0,23" Click="Cancel_button_" Height="20" VerticalAlignment="Bottom"/>
+        <!--"<TextBox x:Name="AppName_t" HorizontalAlignment="Left" Margin="257,130,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>-->
+        <Button Content="Add App" Margin="450,128,0,0" VerticalAlignment="Top" Click="Add_app_Click" HorizontalAlignment="Left" Width="51"/>
+        <ComboBox x:Name="ChooseApp" Margin="271,127,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="120"/>
+        <!--"<ComboBox x:Name="SetHours" HorizontalAlignment="Left" Margin="271,154,0,0" VerticalAlignment="Top" Width="120"/>-->
+    </Grid>
+</Window>

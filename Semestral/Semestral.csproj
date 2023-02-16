@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\done.jpg" />
+    <None Remove="Images\x.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DataEmulation\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\done.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\x.jpg" />
+  </ItemGroup>
+
+</Project>
